@@ -1,8 +1,6 @@
 name: Build and Publish
 
 on:
-  workflow_dispatch:
-
   push:
     tags:
       - "*"
@@ -25,13 +23,13 @@ jobs:
 
       - run: 'mv @quiltmcquilt-bulma.zip quilt-bulma.zip'
 
-#      - name: Release
-#        uses: softprops/action-gh-release@v1
-#
-#        with:
-#          files: |
-#            quilt-bulma.zip
-#            dist/*
+      - name: Release
+        uses: softprops/action-gh-release@v1
+
+        with:
+          files: |
+            quilt-bulma.zip
+            dist/*
 
       - uses: actions/upload-artifact@v3
         name: Upload Artifact

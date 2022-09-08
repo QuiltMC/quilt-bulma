@@ -18,15 +18,21 @@ pseudo-CDN.
 1. Follow the **Building** steps above
 2. Run `pnpm pack` and a `quilt-bulma.zip` file will be generated
 
-## Project Usage
-
-**TODO:** Write this section
-
 # Package Structure
 
 * `css/`: Plain CSS which is needed to tie the light and dark themes together
 * `sass/`: SCSS files representing our Bulma customisations
 * When built, `/dist`: Contains built CSS files, as well as their minified versions
+
+## Usage
+
+* Create a `.npmrc` file in your project directory (if it doesn't exist), and add the following line:
+  ```text
+  @quiltmc:registry=https://npm.pkg.github.com
+  ```
+
+* Install `@quiltmc/quilt-bulma` with your favourite npm-alike
+* Make use of the files you'll now find in `node_modules/@quiltmc/quilt-bulma`
 
 # Project Credit
 
