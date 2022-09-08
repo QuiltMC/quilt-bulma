@@ -1,12 +1,12 @@
-@import "/sass/common/modifiers.scss";
+@import "../../common/modifiers.scss";
 
 $role-modifier-amount: 40%;
 $role-modifier-amount-secondary: 25%;
 $role-modifier-amount-tertiary: 40%;
 
-@import "../../../../node_modules/bulma/sass/utilities/initial-variables.sass";
-@import "../../../../node_modules/bulma/sass/utilities/functions.sass";
-@import "/sass/common/colours.scss";
+@import "../../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../../../node_modules/bulma/sass/utilities/functions.sass";
+@import "../../common/colours.scss";
 
 $body-font: "Roboto", sans-serif;
 $header-font: "Poppins", sans-serif;
@@ -50,8 +50,8 @@ $gradle-blue: #28b3c7;
 $gradle-blue-dark: darken($gradle-blue, 3%);
 $gradle-blue-light: lighten($gradle-blue, 3%);
 
-@import "../../../../node_modules/bulma/sass/utilities/derived-variables.sass";
-@import "/sass/common/derived.scss";
+@import "../../../node_modules/bulma/sass/utilities/derived-variables.sass";
+@import "../../common/derived.scss";
 
 $neutral-background: $white;
 $body-background-color: $neutral-background;
@@ -107,8 +107,8 @@ $card-background-color: $dark;
 
 $modal-close-dimensions: 80px;
 
-@import "../../../../node_modules/bulma/sass/utilities/mixins.sass";
-@import "../../../../node_modules/bulma-timeline/src/sass/index.sass";
-@import "../../../../node_modules/@creativebulma/bulma-divider/src/sass/index.sass";
-@import "../../../../node_modules/@creativebulma/bulma-tooltip/src/sass/index.sass";
+@import "../../../node_modules/bulma/sass/utilities/mixins.sass";
+@import "../../../node_modules/bulma-timeline/src/sass/index.sass";
+@import "../../../node_modules/@creativebulma/bulma-divider/src/sass/index.sass";
+@import "../../../node_modules/@creativebulma/bulma-tooltip/src/sass/index.sass";
 @import "../../components/timeline.scss";

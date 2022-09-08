@@ -1,36 +1,30 @@
 {
-  "name": "@quiltmc/quilt-bulma",
-  "version": "0.0.3",
-  "description": "Bulma, customized for use on Quilt's websites",
-
-  "scripts": {
-    "build": "node build.js",
-    "pack": "npm-pack-zip"
-  },
-
-  "devDependencies": {
-    "@creativebulma/bulma-divider": "^1.1.0",
-    "@creativebulma/bulma-tooltip": "^1.2.0",
-    "bulma": "^0.9.4",
-    "bulma-timeline": "^3.0.5",
-    "clean-css": "^5.3.1",
-    "npm-pack-zip": "^1.3.0",
-    "sass": "^1.54.9"
-  },
-
-  "repository": "https://github.com/QuiltMC/quilt-bulma",
-
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
-  },
-
-  "files": [
-    "css",
-    "dist",
-    "sass"
-  ],
-
-  "keywords": [],
-  "author": "QuiltMC",
-  "license": "MIT"
+	"name": "@quiltmc/quilt-bulma",
+	"version": "0.0.3",
+	"description": "Bulma, customized for use on Quilt's websites",
+	"scripts": {
+		"build": "node build.js",
+		"pack": "npm-pack-zip"
+	},
+	"devDependencies": {
+		"@creativebulma/bulma-divider": "^1.1.0",
+		"@creativebulma/bulma-tooltip": "^1.2.0",
+		"bulma": "^0.9.4",
+		"bulma-timeline": "^3.0.5",
+		"clean-css": "^5.3.1",
+		"npm-pack-zip": "^1.3.0",
+		"sass": "^1.54.9"
+	},
+	"repository": "https://github.com/QuiltMC/quilt-bulma",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"files": [
+		"css",
+		"dist",
+		"sass"
+	],
+	"keywords": [],
+	"author": "QuiltMC",
+	"license": "MIT"
 }
