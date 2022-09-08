@@ -1,0 +1,49 @@
+name: Build and Publish
+
+on:
+  workflow_dispatch:
+
+  push:
+    tags:
+      - "*""
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm build
+      - run: npm package
+      - run: 'mv @quiltmcquilt-bulma.zip quilt-bulma.zip'
+
+#      - name: Release
+#        uses: softprops/action-gh-release@v1
+#
+#        with:
+#          files: |
+#            quilt-bulma.zip
+#            dist/*
+
+      - uses: actions/upload-artifact@v3
+        name: Upload Artifact
+
+        with:
+          name: quilt-bulma.zip
+          path: quilt-bulma.zip
+
+      - uses: JS-DevTools/npm-publish@v1
+        name: Publish package
+
+        with:
+          token: ${{ secrets.GITHUB_TOKEN  }}
+          registry: https://npm.pkg.github.com/
+          tag: latest
+          access: public
+          check-version: false
