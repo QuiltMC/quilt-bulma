@@ -7,9 +7,6 @@ const sass = require('sass')
 function setupDirectory(path) {
 	if (!fs.existsSync(path)) {
 		fs.mkdirSync(path)
-	} else {
-		fs.rmSync(path, {recursive: true})
-		fs.mkdirSync(path)
 	}
 }
 
@@ -41,7 +38,7 @@ console.log()
 files.forEach((name) => {
 	const cleaner = new CleanCSS({
 		inline: false,
-		level: 2,
+		level: 0
 	})
 
 	console.log(`Minifying: ${name}.css -> ${name}.min.css`)

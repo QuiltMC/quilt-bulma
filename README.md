@@ -1,7 +1,7 @@
 # Quilt Bulma
 
 This repository exists to package Quilt's modifications to [the Bulma CSS framework](https://bulma.io). This allows
-us to share it between all of our sites, without relying on hacky approaches such as using the main domain as a 
+us to share it between all of our sites, without relying on hacky approaches such as using the main domain as a
 pseudo-CDN.
 
 # Development
@@ -18,17 +18,24 @@ pseudo-CDN.
 1. Follow the **Building** steps above
 2. Run `pnpm pack` and a `quilt-bulma.zip` file will be generated
 
+## Releasing
+
+1. Update the version provided in the `package.json`
+2. Commit your changes, and add a tag named `vVERSION` - for example, `v0.0.3`
+3. Push your changes along with the tag
+4. GitHub Actions will build and release automatically
+
 # Package Structure
 
 * `css/`: Plain CSS which is needed to tie the light and dark themes together
 * `sass/`: SCSS files representing our Bulma customisations
 * When built, `/dist`: Contains built CSS files, as well as their minified versions
 
-## Usage
+# Usage
 
 * Create a [Personal Access Token](https://github.com/settings/tokens) with at least the `packages:read` scope
 
-* Create a `.npmrc` file in your home folder (if it doesn't exist), and add the following line, replacing `TOKEN_HERE` 
+* Create a `.npmrc` file in your home folder (if it doesn't exist), and add the following line, replacing `TOKEN_HERE`
   with the Personal Access Token you just generated:
   ```text
   //npm.pkg.github.com/:_authToken=TOKEN_HERE

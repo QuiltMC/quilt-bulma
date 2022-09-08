@@ -1,6 +1,6 @@
 {
   "name": "@quiltmc/quilt-bulma",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bulma, customized for use on Quilt's websites",
 
   "scripts": {

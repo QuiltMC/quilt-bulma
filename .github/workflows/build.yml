@@ -1,0 +1,40 @@
+name: Build and Publish
+
+on:
+  push:
+    branches-ignore:
+      - root
+
+  pull_request:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - uses: jgierer12/npm-auth-gpr@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: NPM tasks
+        run: |
+          npm install --save-dev
+
+          npm run build
+          npm run pack
+
+      - run: 'mv @quiltmcquilt-bulma.zip quilt-bulma.zip'
+
+      - uses: actions/upload-artifact@v3
+        name: Upload Artifact
+
+        with:
+          name: quilt-bulma.zip
+          path: quilt-bulma.zip
