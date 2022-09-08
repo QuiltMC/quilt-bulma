@@ -1,11 +1,11 @@
-@import "vars";
+@import "./vars.scss";
 
-@import "../../../node_modules/bulma/bulma";
+@import "/node_modules/bulma/bulma.sass";
 
-@import "../../common/modifiers";
-@import "../../common/colours";
-@import "../../common/derived";
-@import "../../components/_all";
+@import "/sass/common/modifiers.scss";
+@import "/sass/common/colours.scss";
+@import "/sass/common/derived.scss";
+@import "../../components/_all.scss";
 
-@import "buttons";
-@import "misc";
+@import "./buttons.scss";
+@import "./misc.scss";
