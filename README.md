@@ -26,6 +26,14 @@ pseudo-CDN.
 
 ## Usage
 
+* Create a [Personal Access Token](https://github.com/settings/tokens) with at least the `packages:read` scope
+
+* Create a `.npmrc` file in your home folder (if it doesn't exist), and add the following line, replacing `TOKEN_HERE` 
+  with the Personal Access Token you just generated:
+  ```text
+  //npm.pkg.github.com/:_authToken=TOKEN_HERE
+  ```
+
 * Create a `.npmrc` file in your project directory (if it doesn't exist), and add the following line:
   ```text
   @quiltmc:registry=https://npm.pkg.github.com

@@ -1,6 +1,6 @@
 {
   "name": "@quiltmc/quilt-bulma",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bulma, customized for use on Quilt's websites",
 
   "scripts": {
@@ -18,9 +18,15 @@
     "sass": "^1.54.9"
   },
 
+  "repository": "https://github.com/QuiltMC/quilt-bulma",
+
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+
   "files": [
-    "dist",
     "css",
+    "dist",
     "sass"
   ],
 
