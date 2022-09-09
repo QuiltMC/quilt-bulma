@@ -28,7 +28,7 @@ pseudo-CDN.
 # Usage
 
 1. Install `quilt-bulma` with your favourite npm-alike
-   2.Make use of the files you'll now find in `node_modules/quilt-bulma
+2. Make use of the files you'll now find in `node_modules/quilt-bulma
 
 # Package Structure
 
