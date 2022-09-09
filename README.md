@@ -25,29 +25,16 @@ pseudo-CDN.
 3. Push your changes along with the tag
 4. GitHub Actions will build and release automatically
 
+# Usage
+
+1. Install `quilt-bulma` with your favourite npm-alike
+   2.Make use of the files you'll now find in `node_modules/quilt-bulma
+
 # Package Structure
 
 * `css/`: Plain CSS which is needed to tie the light and dark themes together
 * `sass/`: SCSS files representing our Bulma customisations
-* When built, `/dist`: Contains built CSS files, as well as their minified versions
-
-# Usage
-
-* Create a [Personal Access Token](https://github.com/settings/tokens) with at least the `packages:read` scope
-
-* Create a `.npmrc` file in your home folder (if it doesn't exist), and add the following line, replacing `TOKEN_HERE`
-  with the Personal Access Token you just generated:
-  ```text
-  //npm.pkg.github.com/:_authToken=TOKEN_HERE
-  ```
-
-* Create a `.npmrc` file in your project directory (if it doesn't exist), and add the following line:
-  ```text
-  @quiltmc:registry=https://npm.pkg.github.com
-  ```
-
-* Install `@quiltmc/quilt-bulma` with your favourite npm-alike
-* Make use of the files you'll now find in `node_modules/@quiltmc/quilt-bulma`
+* When built, `/dist`: Contains built CSS files, as well as their minified versions`
 
 # Project Credit
 

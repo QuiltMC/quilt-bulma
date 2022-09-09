@@ -16,21 +16,20 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-
-      - uses: jgierer12/npm-auth-gpr@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          registry-url: https://registry.npmjs.org
 
       - name: NPM tasks
+
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
         run: |
           npm install --save-dev
-          
+
           npm run build
           npm run pack
-          
-          npm publish
 
-      - run: 'mv @quiltmcquilt-bulma.zip quilt-bulma.zip'
+          npm publish
 
       - name: Release
         uses: softprops/action-gh-release@v1
