@@ -266,3 +266,8 @@ body {
 		display: none !important;
 	}
 }
+
+// Remove bulma's styles, which break code highlighting
+.tag {
+	all: unset !important;
+}
