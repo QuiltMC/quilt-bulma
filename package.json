@@ -1,6 +1,6 @@
 {
 	"name": "quilt-bulma",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Bulma, customized for use on Quilt's websites",
 	"scripts": {
 		"build": "node build.js",
