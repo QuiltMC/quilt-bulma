@@ -26,6 +26,25 @@ h6 {
 	}
 }
 
+kbd {
+	color: $code;
+	background-color: $dark;
+
+	// Stolen from MDN docs
+	padding: 2px 4px;
+	border: 2px solid black;
+	border-radius: 3px;
+	box-shadow: 2px 2px black;
+	line-height: 1;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+kbd:hover {
+	transform: translate(2px, 2px);
+	box-shadow: none;
+}
+
 article.blog-post:not(:last-child) {
 	margin-bottom: 1rem;
 }
