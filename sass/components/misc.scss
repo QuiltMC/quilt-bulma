@@ -1,3 +1,8 @@
+* {
+	scroll-behavior: smooth;
+	transition-duration: 0.1s;
+}
+
 .columns {
 	margin-left: 0;
 	margin-right: 0;
@@ -265,4 +270,9 @@ body {
 	.is-ltr {
 		display: none !important;
 	}
+}
+
+// Remove bulma's styles, which break code highlighting
+.tag {
+	all: unset !important;
 }
