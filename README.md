@@ -10,7 +10,7 @@ pseudo-CDN.
 
 1. Install NodeJS v18 or later
 2. Install `npm` and `pnpm`
-3. Run `pnpm i --dev` and `pnpm run build`
+3. Run `pnpm i` and `pnpm build`
 4. The built files will be placed in the `dist/` directory
 
 ## Creating a distribution
