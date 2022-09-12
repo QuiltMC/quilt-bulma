@@ -276,3 +276,13 @@ body {
 .tag {
 	all: unset !important;
 }
+
+// Set the tab-stop to 4 for now, allowing it to be customized via CSS variables
+
+:root {
+  --tab-stop: 4;
+}
+
+* {
+  tab-size: var(--tab-stop);
+}
