@@ -7,7 +7,7 @@
 .hero.has-background-patches {
 	.navbar-menu,
 	.navbar-brand {
-		background-color: transparentize($dark, 0.3);
+		background-color: $navbar-transparent-background;
 	}
 }
 
@@ -22,8 +22,4 @@
 	.has-background-patches {
 		background-image: url("/assets/img/hero-bg.svg");
 	}
-}
-
-.hero .navbar {
-	backdrop-filter: blur(2px);
 }
