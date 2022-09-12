@@ -12,6 +12,14 @@ span.inline-divider {
 	border-color: $grey-lighter;
 }
 
+.modal-close {
+  &::before,
+  &::after {
+	background-color: black;
+  }
+}
+
+
 #theme-switcher {
 	display: none;
 }

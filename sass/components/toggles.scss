@@ -1,0 +1,38 @@
+
+#language-switcher:checked ~ {
+  #language-modal {
+	display: flex;
+  }
+}
+
+#low-contrast:checked ~ {
+  * {
+	filter: brightness(70%) contrast(90%) saturate(90%);
+  }
+
+  section {
+	#theme-low-contrast {
+	  display: block;
+	}
+
+	#theme-normal-contrast {
+	  display: none;
+	}
+  }
+}
+
+#toggle-navbar:checked ~ {
+  section .navbar-menu {
+	display: block;
+  }
+
+  nav .navbar-menu {
+	display: block;
+  }
+}
+
+#toggle-sidebar:checked ~ {
+  div .sidebar {
+	display: block !important;
+  }
+}

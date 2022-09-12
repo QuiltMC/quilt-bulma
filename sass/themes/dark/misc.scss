@@ -16,46 +16,16 @@ span.inline-divider {
 	border-color: $grey-dark;
 }
 
+.modal-close {
+  &::before,
+  &::after {
+	background-color: white;
+  }
+}
+
+
 #theme-normal-contrast {
 	display: block;
-}
-
-#language-switcher:checked ~ {
-	#language-modal {
-		display: flex;
-	}
-}
-
-#low-contrast:checked ~ {
-	* {
-		filter: brightness(70%) contrast(90%) saturate(90%);
-	}
-
-	section {
-		#theme-low-contrast {
-			display: block;
-		}
-
-		#theme-normal-contrast {
-			display: none;
-		}
-	}
-}
-
-#toggle-navbar:checked ~ {
-	section .navbar-menu {
-		display: block;
-	}
-
-	nav .navbar-menu {
-		display: block;
-	}
-}
-
-#toggle-sidebar:checked ~ {
-	div .sidebar {
-		display: block !important;
-	}
 }
 
 /* For the low-contrast peeps out there, we'll do some filtering. Best we can do for now. */
@@ -73,11 +43,4 @@ span.inline-divider {
 
 #theme-switcher {
 	display: flex;
-}
-
-.modal-close {
-	&::before,
-	&::after {
-		background-color: white;
-	}
 }
