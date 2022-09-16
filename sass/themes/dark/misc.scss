@@ -23,9 +23,9 @@ span.inline-divider {
   }
 }
 
-
-#theme-normal-contrast {
-	display: block;
+// Enable low contrast button
+label[for="low-contrast"] {
+	display: flex;
 }
 
 /* For the low-contrast peeps out there, we'll do some filtering. Best we can do for now. */
@@ -35,8 +35,7 @@ span.inline-divider {
 		filter: brightness(70%) contrast(90%) saturate(90%);
 	}
 
-	#theme-normal-contrast,
-	#theme-low-contrast {
+	label[for="low-contrast"] {
 		display: none !important;
 	}
 }
