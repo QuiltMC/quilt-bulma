@@ -149,8 +149,8 @@ body > * {
 	transition: all 1s ease;
 }
 
-#theme-normal-contrast,
-#theme-low-contrast {
+// Hide the low contrast button by default - individual themes can toggle it back on.
+label[for="low-contrast"] {
 	display: none;
 }
 
@@ -280,9 +280,9 @@ body {
 // Set the tab-stop to 4 for now, allowing it to be customized via CSS variables
 
 :root {
-  --tab-stop: 4;
+	--tab-stop: 4;
 }
 
 * {
-  tab-size: var(--tab-stop);
+	tab-size: var(--tab-stop);
 }
