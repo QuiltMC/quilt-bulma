@@ -43,3 +43,11 @@ label[for="low-contrast"] {
 #theme-switcher {
 	display: flex;
 }
+
+.has-text-starchild-themed {
+  color: $starchild-dark;
+}
+
+.has-background-starchild-themed {
+  background-color: $starchild-dark;
+}

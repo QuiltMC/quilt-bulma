@@ -286,3 +286,11 @@ body {
 * {
 	tab-size: var(--tab-stop);
 }
+
+.has-text-starchild {
+  color: $starchild;
+}
+
+.has-background-starchild {
+  background-color: $starchild;
+}

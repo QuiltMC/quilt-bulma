@@ -23,3 +23,7 @@ $moderator-light: lighten($moderator, $role-modifier-amount-secondary) !default;
 $trainee: #dea4b4 !default;
 $trainee-dark: darken($trainee, $role-modifier-amount) !default;
 $trainee-light: lighten($trainee, $role-modifier-amount) !default;
+
+$starchild: #de1f26;
+$starchild-light: lighten($starchild, 30%);
+$starchild-dark: darken($starchild, 30%);
