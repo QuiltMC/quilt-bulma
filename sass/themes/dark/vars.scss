@@ -76,10 +76,15 @@ $body-background-color: $neutral-background;
 $footer-background-color: #1c1526;
 
 $tabs-boxed-link-active-background-color: $body-background-color;
+$tabs-boxed-link-hover-background-color: $dark;
 
 $code: lighten($primary, 20%);
 $code-background: $dark;
 $pre-background: $dark;
+
+$tabs-link-active-color: $code;
+$tabs-link-hover-color: $code;
+$tabs-link-color: $code;
 
 $box-background-color: $dark;
 $tag-background-color: $dark;

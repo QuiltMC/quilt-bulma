@@ -18,3 +18,7 @@ $pre-border: 1px solid darken($dark, 20%);
 $navbar-transparent-background: rgba(255, 255, 255, 0.3) !default;
 
 $transparent-text: transparentize($text, 0.7);
+
+.content .tabs ul {
+    margin-left: 0;
+}
