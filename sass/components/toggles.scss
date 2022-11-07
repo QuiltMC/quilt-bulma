@@ -13,6 +13,7 @@
 	&:checked ~ {
 		* {
 			filter: brightness(70%) contrast(90%) saturate(90%);
+
 			#theme-low-contrast {
 				display: block;
 			}
