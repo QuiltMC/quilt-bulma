@@ -5,7 +5,7 @@
 }
 
 #low-contrast {
-	&:not(:checked) ~ section {
+	&:not(:checked) ~ * {
 		#theme-low-contrast {
 			display: none;
 		}
@@ -13,8 +13,6 @@
 	&:checked ~ {
 		* {
 			filter: brightness(70%) contrast(90%) saturate(90%);
-		}
-		section {
 			#theme-low-contrast {
 				display: block;
 			}
