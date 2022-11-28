@@ -2,10 +2,10 @@
 
 @import "../../../node_modules/bulma/bulma.sass";
 
+@import "../../common/buttons.scss";
 @import "../../common/modifiers.scss";
 @import "../../common/colours.scss";
 @import "../../common/derived.scss";
 @import "../../components/all";
 
-@import "./buttons.scss";
 @import "./misc.scss";

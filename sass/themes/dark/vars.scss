@@ -1,21 +1,23 @@
 // TODO: restructure this to use @use statements.
-@import "../../common/modifiers.scss";
+@import "../../common/modifiers";
 
 $role-modifier-amount-secondary: 40%;
 
-@import "../../../node_modules/bulma/sass/utilities/initial-variables.sass";
-@import "../../common/colours.scss";
+@import "../../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../common/colours";
 
 $body-font: "Atkinson Hyperlegible", sans-serif;
 $header-font: "Poppins", sans-serif;
 $mono-font: "IBM Plex Mono", monospace;
 
-$custom-colors: (
-	"blurple": #5865f2,
-	"pink": #dc29dd,
-);
-
+$blurple: #5865f2;
 $pink: #dc29dd;
+
+$custom-colors: (
+	"blurple": $blurple,
+	"pink": $pink,
+	"starchild": $starchild,
+);
 
 $primary: #9722ff;
 $link: #27a2fd;
@@ -37,7 +39,6 @@ $danger-light: lighten($danger, $lighten-amount);
 $dark-lightish: lighten($dark, 20%) !default;
 $dark-light: lighten($dark, 50%) !default;
 
-$blurple: #5865f2;
 $blurple-dark: darken($blurple, 3%);
 $blurple-light: lighten($blurple, 3%);
 
