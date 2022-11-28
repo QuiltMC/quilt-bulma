@@ -1,6 +1,5 @@
 * {
 	scroll-behavior: smooth;
-	transition-duration: 0.1s;
 }
 
 .columns {
@@ -143,10 +142,6 @@ span.inline-divider {
 
 .max-width-50 {
 	max-width: 50rem;
-}
-
-body > * {
-	transition: all 1s ease;
 }
 
 // Hide the low contrast button by default - individual themes can toggle it back on.
