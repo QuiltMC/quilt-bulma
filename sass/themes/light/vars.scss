@@ -8,10 +8,6 @@ $role-modifier-amount-tertiary: 40%;
 @import "../../../node_modules/bulma/sass/utilities/functions";
 @import "../../common/colours";
 
-$body-font: "Atkinson Hyperlegible", sans-serif;
-$header-font: "Poppins", sans-serif;
-$mono-font: "IBM Plex Mono", monospace;
-
 $primary-lighter: bulmaLighten($primary, 41%);
 $dark: $primary-lighter;
 $white: #fefcff;
