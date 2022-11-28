@@ -1,4 +1,5 @@
 $theme-switcher-enabled: false !default;
+$low-contrast-switch-enabled: false !default;
 
 #theme-switcher {
 	display: if($theme-switcher-enabled, flex, none);
@@ -35,4 +36,22 @@ $theme-switcher-enabled: false !default;
 }
 #toggle-sidebar:checked ~ div .sidebar {
 	display: block !important;
+}
+
+label[for="low-contrast"] {
+	display: if($low-contrast-switch-enabled, flex, none);
+}
+
+@if $low-contrast-switch-enabled {
+	/* For the low-contrast peeps out there, we'll do some filtering. Best we can do for now. */
+	@media (prefers-contrast: less) {
+		// This is not an error, your editor is just wrong.
+		body > * {
+			filter: brightness(70%) contrast(90%) saturate(90%);
+		}
+
+		label[for="low-contrast"] {
+			display: none !important;
+		}
+	}
 }

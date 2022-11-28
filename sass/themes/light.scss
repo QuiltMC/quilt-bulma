@@ -1,20 +1,20 @@
-@import "../../common/modifiers";
+@import "../common/modifiers";
 
 $role-modifier-amount: 40%;
 $role-modifier-amount-secondary: 25%;
 $role-modifier-amount-tertiary: 40%;
 
-@import "../../../node_modules/bulma/sass/utilities/initial-variables";
-@import "../../../node_modules/bulma/sass/utilities/functions";
-@import "../../common/colours";
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+@import "../common/colours";
 
 $primary-lighter: bulmaLighten($primary, 41%);
 $dark: $primary-lighter;
 $white: #fefcff;
 $link: #2291e6;
 
-@import "../../../node_modules/bulma/sass/utilities/derived-variables";
-@import "../../common/derived";
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+@import "../common/derived";
 
 $neutral-background: $white;
 $body-background-color: $neutral-background;
@@ -69,6 +69,11 @@ $timeline-marker-border: 2px solid $text;
 $card-background-color: $dark;
 
 $modal-close-dimensions: 80px;
+$modal-close-button-color: $black;
+
+$hr-color: $grey-lighter;
+$notification-link-color: $black;
+$inline-divider-color: $grey-lighter;
 
 $brand-colors: map-merge(
 	$brand-colors,
@@ -78,9 +83,3 @@ $brand-colors: map-merge(
 	)
 );
 $theme-switcher-enabled: true;
-
-@import "../../../node_modules/bulma/sass/utilities/mixins";
-@import "../../../node_modules/bulma-timeline/src/sass";
-@import "../../../node_modules/@creativebulma/bulma-divider/src/sass";
-@import "../../../node_modules/@creativebulma/bulma-tooltip/src/sass";
-@import "../../components/timeline";

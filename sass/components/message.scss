@@ -1,7 +1,6 @@
 .message.is-fullheight {
-	height: 100%;
-
-	.message-body {
+	&,
+	& .message-body {
 		height: 100%;
 	}
 }

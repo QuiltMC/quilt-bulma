@@ -11,7 +11,7 @@ div.highlighter-rouge {
 figure.highlight {
 	text-align: if($rtl, right, left) !important;
 
-	& > pre {
+	> pre {
 		background-color: $dark;
 		border: $pre-border;
 		border-radius: 0.2rem;
