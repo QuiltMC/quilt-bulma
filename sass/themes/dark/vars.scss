@@ -5,12 +5,7 @@ $role-modifier-amount-secondary: 40%;
 @import "../../../node_modules/bulma/sass/utilities/initial-variables";
 @import "../../common/colours";
 
-$body-font: "Atkinson Hyperlegible", sans-serif;
-$header-font: "Poppins", sans-serif;
-$mono-font: "IBM Plex Mono", monospace;
-
 $dark: #1c1526 !default;
-
 $lighten-amount: 15%;
 
 $primary-light: lighten($primary, $lighten-amount);
