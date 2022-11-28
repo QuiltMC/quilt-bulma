@@ -42,19 +42,19 @@ kbd {
 	line-height: 1;
 	display: inline-block;
 	white-space: nowrap;
-}
 
-kbd:hover {
-	transform: translate(2px, 2px);
-	box-shadow: none;
+	&:hover {
+		transform: translate(2px, 2px);
+		box-shadow: none;
+	}
 }
-
-article.blog-post:not(:last-child) {
-	margin-bottom: 1rem;
-}
-
-article.with-divider.blog-post:not(:last-child) {
-	border-bottom: 1px solid darken($text, 40%);
+article.blog-post {
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+	&.with-divider:not(:last-child) {
+		border-bottom: 1px solid darken($text, 40%);
+	}
 }
 
 @include tablet {
@@ -79,7 +79,7 @@ article.with-divider.blog-post:not(:last-child) {
 
 	margin-bottom: 1rem;
 
-	& > * {
+	> * {
 		margin: 1rem !important;
 	}
 
@@ -144,11 +144,6 @@ span.inline-divider {
 	max-width: 50rem;
 }
 
-// Hide the low contrast button by default - individual themes can toggle it back on.
-label[for="low-contrast"] {
-	display: none;
-}
-
 .column {
 	min-width: 0;
 }
@@ -168,7 +163,7 @@ label[for="low-contrast"] {
 }
 
 body {
-	/* Force minimum height of document body to be the viewport height */
+	// Force minimum height of document body to be the viewport height
 	min-height: 100vh;
 }
 
@@ -190,15 +185,14 @@ body {
 		left: auto;
 		right: 0;
 
+		&.is-right {
+			left: 0;
+			right: auto;
+		}
 		.icon {
 			margin-right: 0;
 			margin-left: 0.5rem;
 		}
-	}
-
-	.navbar-dropdown.is-right {
-		left: 0;
-		right: auto;
 	}
 }
 
@@ -268,4 +262,25 @@ body {
 
 * {
 	tab-size: var(--tab-stop);
+}
+
+hr {
+	background-color: $hr-color;
+	border-color: $hr-color;
+}
+
+a.notification {
+	color: $notification-link-color;
+}
+
+span.inline-divider {
+	background-color: $inline-divider-color;
+	border-color: $inline-divider-color;
+}
+
+.modal-close {
+	&::before,
+	&::after {
+		background-color: $modal-close-button-color;
+	}
 }

@@ -1,9 +1,9 @@
-@import "../../common/modifiers";
+@import "../common/modifiers";
 
 $role-modifier-amount-secondary: 40%;
 
-@import "../../../node_modules/bulma/sass/utilities/initial-variables";
-@import "../../common/colours";
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../common/colours";
 
 $dark: #1c1526 !default;
 $lighten-amount: 15%;
@@ -22,8 +22,8 @@ $text: $white-bis !default;
 $text-light: $white-ter;
 $text-strong: $white;
 
-@import "../../../node_modules/bulma/sass/utilities/derived-variables";
-@import "../../common/derived";
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+@import "../common/derived";
 
 $admin-background: $admin-dark;
 $community-background: $community-dark;
@@ -124,9 +124,7 @@ $menu-item-hover-background-color: darken($primary, 30%);
 $menu-item-active-background-color: $primary;
 
 $navbar-background-color: $dark;
-
 $navbar-dropdown-item-hover-background-color: $primary;
-
 $navbar-item-active-background-color: $primary;
 $navbar-item-active-color: $text;
 $navbar-item-hover-background-color: $primary;
@@ -157,10 +155,19 @@ $button-disabled-color: $grey;
 $button-disabled-background-color: $dark;
 
 $modal-close-dimensions: 80px;
+$modal-close-button-color: $black;
 $modal-background-background-color: rgba(0, 0, 0, 0.86);
 
-@import "../../../node_modules/bulma/sass/utilities/mixins";
-@import "../../../node_modules/bulma-timeline/src/sass/index";
-@import "../../../node_modules/@creativebulma/bulma-divider/src/sass/index";
-@import "../../../node_modules/@creativebulma/bulma-tooltip/src/sass/index";
-@import "../../components/timeline";
+$hr-color: $grey-dark;
+$notification-link-color: $white;
+$inline-divider-color: $grey-dark;
+
+$low-contrast-switch-enabled: true;
+
+// Miscellaneous rules
+.button.is-disabled {
+	color: $button-disabled-color;
+}
+.notification {
+	background-color: lighten($dark, 10%);
+}
