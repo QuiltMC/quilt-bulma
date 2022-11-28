@@ -9,11 +9,7 @@ div.highlighter-rouge {
 }
 
 figure.highlight {
-	@if $rtl {
-		text-align: right !important;
-	} @else {
-		text-align: left !important;
-	}
+	text-align: if($rtl, right, left) !important;
 
 	& > pre {
 		background-color: $dark;
@@ -21,7 +17,7 @@ figure.highlight {
 		border-radius: 0.2rem;
 	}
 
-	& td {
+	td {
 		padding: 0 !important;
 	}
 }

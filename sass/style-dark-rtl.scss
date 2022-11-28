@@ -1,3 +1,5 @@
-@import "./common/fonts.scss";
-@import "./themes/dark/base.scss";
-@import "./prism-themes/monokai.scss";
+$rtl: true;
+
+@import "common/fonts";
+@import "themes/dark/base";
+@import "prism-themes/monokai";

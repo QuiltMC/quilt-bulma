@@ -12,12 +12,14 @@ div.blog-post {
 	}
 }
 
-.media .media-content {
-	overflow-y: hidden;
-}
+.media {
+	.media-content {
+		overflow-y: hidden;
+	}
 
-.media .subtitle {
-	margin-bottom: 0 !important;
+	.media .subtitle {
+		margin-bottom: 0 !important;
+	}
 }
 
 img.emoji {
