@@ -1,7 +1,11 @@
-#language-switcher:checked ~ {
-	#language-modal {
-		display: flex;
-	}
+$theme-switcher-enabled: false !default;
+
+#theme-switcher {
+	display: if($theme-switcher-enabled, flex, none);
+}
+
+#language-switcher:checked ~ #language-modal {
+	display: flex;
 }
 
 #low-contrast {
@@ -26,16 +30,11 @@
 }
 
 #toggle-navbar:checked ~ {
-	section .navbar-menu {
-		display: block;
-	}
-
+	section,
 	nav .navbar-menu {
 		display: block;
 	}
-}
 
-#toggle-sidebar:checked ~ {
 	div .sidebar {
 		display: block !important;
 	}
