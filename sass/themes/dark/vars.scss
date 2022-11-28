@@ -1,4 +1,3 @@
-// TODO: restructure this to use @use statements.
 @import "../../common/modifiers";
 
 $role-modifier-amount-secondary: 40%;
@@ -10,21 +9,6 @@ $body-font: "Atkinson Hyperlegible", sans-serif;
 $header-font: "Poppins", sans-serif;
 $mono-font: "IBM Plex Mono", monospace;
 
-$blurple: #5865f2;
-$pink: #dc29dd;
-
-$custom-colors: (
-	"blurple": $blurple,
-	"pink": $pink,
-	"starchild": $starchild,
-);
-
-$primary: #9722ff;
-$link: #27a2fd;
-$info: #3041f2;
-$success: #41d02a;
-$warning: #fcff22;
-$danger: #ff2222;
 $dark: #1c1526 !default;
 
 $lighten-amount: 15%;
@@ -38,25 +22,6 @@ $danger-light: lighten($danger, $lighten-amount);
 
 $dark-lightish: lighten($dark, 20%) !default;
 $dark-light: lighten($dark, 50%) !default;
-
-$blurple-dark: darken($blurple, 3%);
-$blurple-light: lighten($blurple, 3%);
-
-$rss: #ff8c00;
-$rss-dark: darken($rss, 3%);
-$rss-light: lighten($rss, 3%);
-
-$twitter-blue: #1da1f2;
-$twitter-blue-dark: darken($twitter-blue, 3%);
-$twitter-blue-light: lighten($twitter-blue, 3%);
-
-$mastodon-blue: #6364ff;
-$mastodon-blue-dark: darken($mastodon-blue, 3%);
-$mastodon-blue-light: lighten($mastodon-blue, 3%);
-
-$gradle-blue: #28b3c7;
-$gradle-blue-dark: darken($gradle-blue, 3%);
-$gradle-blue-light: lighten($gradle-blue, 3%);
 
 $text: $white-bis !default;
 $text-light: $white-ter;
@@ -156,10 +121,6 @@ $content-blockquote-background-color: $dark;
 
 $link-hover: $link-dark;
 $link-active: $link-dark;
-
-$family-sans-serif: $body-font;
-$family-secondary: $header-font;
-$family-monospace: $mono-font;
 
 $scheme-main: $body-background-color;
 $scheme-invert: $white;
