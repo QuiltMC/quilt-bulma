@@ -17,10 +17,8 @@
 	}
 }
 
-.button-grid {
-	+ & {
-		margin-top: -0.8rem;
-	}
+.button-grid + .button-grid {
+	margin-top: -0.8rem;
 }
 
 .button {
