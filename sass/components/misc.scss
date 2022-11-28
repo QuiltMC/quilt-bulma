@@ -58,7 +58,7 @@ article.with-divider.blog-post:not(:last-child) {
 	border-bottom: 1px solid darken($text, 40%);
 }
 
-@media screen and (min-width: 769px) {
+@include tablet {
 	.is-sticky {
 		position: -webkit-sticky;
 		position: -moz-sticky;
@@ -178,18 +178,13 @@ body {
 }
 
 .navbar .navbar-brand .navbar-logo {
-	@include ltr {
-		padding-right: 3em;
+	@include ltr-property("padding", 3rem);
 
-		img {
+	img {
+		@include ltr {
 			margin-right: 0.5em;
 		}
-	}
-
-	@include rtl {
-		padding-left: 3em;
-
-		img {
+		@include rtl {
 			margin-left: 1em;
 		}
 	}
@@ -213,15 +208,8 @@ body {
 }
 
 .patchnotes-image {
-	@include ltr {
-		float: right;
-		margin-left: 2em;
-	}
-
-	@include rtl {
-		float: left;
-		margin-right: 2em;
-	}
+	@include ltr-property("margin", 2rem, false);
+	float: if($rtl, left, right);
 }
 
 @include rtl {
@@ -251,7 +239,7 @@ body {
 }
 
 @include rtl {
-	@media screen and (min-width: 769px), print {
+	@include tablet {
 		.field-label {
 			text-align: left;
 			margin-left: 1.5rem;
@@ -285,12 +273,4 @@ body {
 
 * {
 	tab-size: var(--tab-stop);
-}
-
-.has-text-starchild {
-  color: $starchild;
-}
-
-.has-background-starchild {
-  background-color: $starchild;
 }

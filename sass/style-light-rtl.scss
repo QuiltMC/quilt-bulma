@@ -1,4 +1,5 @@
-@import "./common/fonts.scss";
-@import "./common/rtl.sass";
-@import "./themes/light/base.scss";
-@import "./prism-themes/murphy.scss";
+$rtl: true;
+
+@import "common/fonts";
+@import "themes/light/base";
+@import "prism-themes/murphy";

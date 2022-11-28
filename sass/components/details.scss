@@ -14,13 +14,7 @@
 				height: 1.5rem;
 				margin-bottom: 0.1rem;
 
-				@include rtl {
-					margin-left: 0.5rem;
-				}
-
-				@include ltr {
-					margin-right: 0.5rem;
-				}
+				@include ltr-property("margin", 0.5rem);
 			}
 
 			.summary-icon {
@@ -38,18 +32,8 @@
 			}
 		}
 
-		&[open] {
-			summary {
-				.summary-icon {
-					@include rtl {
-						transform: rotate(-90deg);
-					}
-
-					@include ltr {
-						transform: rotate(90deg);
-					}
-				}
-			}
+		&[open] summary .summary-icon {
+			transform: rotate(if($rtl, -90deg, 90deg));
 		}
 
 		p:first-of-type {

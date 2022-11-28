@@ -2,7 +2,7 @@
 	border-bottom: 2px solid $transparent-text;
 }
 
-@media screen and (max-width: 1023px) {
+@include touch {
 	.navbar-menu {
 		box-shadow: none;
 		border-bottom: 2px solid $transparent-text;
@@ -49,14 +49,14 @@
 		box-shadow: none;
 		border-top-width: 1px;
 
-		@media screen and (min-width: 1024px) {
+		@include desktop {
 			border: 1px solid transparentize($text, 0.5);
 		}
 	}
-}
 
-.navbar-item .icon {
-	margin-right: 0.5rem;
+	.icon {
+		margin-right: 0.5rem;
+	}
 }
 
 .navbar-dropdown .divider {
@@ -69,10 +69,8 @@
 	&::after {
 		background-color: $default-border-color;
 	}
-}
 
-@media screen and (max-width: 768px) {
-	.navbar-dropdown .divider {
+	@include mobile {
 		&::before {
 			margin-left: 1rem;
 		}

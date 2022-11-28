@@ -1,12 +1,12 @@
-@import "../../common/modifiers.scss";
+@import "../../common/modifiers";
 
 $role-modifier-amount: 40%;
 $role-modifier-amount-secondary: 25%;
 $role-modifier-amount-tertiary: 40%;
 
-@import "../../../node_modules/bulma/sass/utilities/initial-variables.sass";
-@import "../../../node_modules/bulma/sass/utilities/functions.sass";
-@import "../../common/colours.scss";
+@import "../../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../../node_modules/bulma/sass/utilities/functions";
+@import "../../common/colours";
 
 $body-font: "Atkinson Hyperlegible", sans-serif;
 $header-font: "Poppins", sans-serif;
@@ -15,9 +15,10 @@ $mono-font: "IBM Plex Mono", monospace;
 $primary-lighter: bulmaLighten($primary, 41%);
 $dark: $primary-lighter;
 $white: #fefcff;
+$link: #2291e6;
 
-@import "../../../node_modules/bulma/sass/utilities/derived-variables.sass";
-@import "../../common/derived.scss";
+@import "../../../node_modules/bulma/sass/utilities/derived-variables";
+@import "../../common/derived";
 
 $neutral-background: $white;
 $body-background-color: $neutral-background;
@@ -73,14 +74,17 @@ $card-background-color: $dark;
 
 $modal-close-dimensions: 80px;
 
-$custom-button-colors: (
-	github: $white $black $white-bis $black $black,
-	rss: $rss $white $rss-light,
+$brand-colors: map-merge(
+	$brand-colors,
+	(
+		github: $white $black $white-bis $black $black,
+		rss: $rss $white $rss-light,
+	)
 );
 $theme-switcher-enabled: true;
 
-@import "../../../node_modules/bulma/sass/utilities/mixins.sass";
+@import "../../../node_modules/bulma/sass/utilities/mixins";
 @import "../../../node_modules/bulma-timeline/src/sass";
 @import "../../../node_modules/@creativebulma/bulma-divider/src/sass";
 @import "../../../node_modules/@creativebulma/bulma-tooltip/src/sass";
-@import "../../components/timeline.scss";
+@import "../../components/timeline";

@@ -27,8 +27,8 @@ $text: $white-bis !default;
 $text-light: $white-ter;
 $text-strong: $white;
 
-@import "../../../node_modules/bulma/sass/utilities/derived-variables.sass";
-@import "../../common/derived.scss";
+@import "../../../node_modules/bulma/sass/utilities/derived-variables";
+@import "../../common/derived";
 
 $admin-background: $admin-dark;
 $community-background: $community-dark;
@@ -164,8 +164,8 @@ $button-disabled-background-color: $dark;
 $modal-close-dimensions: 80px;
 $modal-background-background-color: rgba(0, 0, 0, 0.86);
 
-@import "../../../node_modules/bulma/sass/utilities/mixins.sass";
-@import "../../../node_modules/bulma-timeline/src/sass/index.sass";
-@import "../../../node_modules/@creativebulma/bulma-divider/src/sass/index.sass";
-@import "../../../node_modules/@creativebulma/bulma-tooltip/src/sass/index.sass";
-@import "../../components/timeline.scss";
+@import "../../../node_modules/bulma/sass/utilities/mixins";
+@import "../../../node_modules/bulma-timeline/src/sass/index";
+@import "../../../node_modules/@creativebulma/bulma-divider/src/sass/index";
+@import "../../../node_modules/@creativebulma/bulma-tooltip/src/sass/index";
+@import "../../components/timeline";

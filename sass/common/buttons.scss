@@ -1,20 +1,7 @@
-@import "../util/funcs.scss";
-
-$button-colors: (
-	// name: background-color text-color active-color (border-color) (active-border-color)
-	discord: $blurple $white $blurple-dark,
-	twitter: $twitter-blue $white $twitter-blue-dark,
-	mastodon: $mastodon-blue $white $mastodon-blue-dark,
-	gradle: $gradle-blue $white $gradle-blue-dark,
-	github: $white $black $grey-lightest transparent,
-	rss: $rss $white $rss-dark
-);
-@if variable-exists("custom-button-colors") {
-	$button-colors: map-merge($button-colors, $custom-button-colors);
-}
+@import "../util/funcs";
 
 .button {
-	@each $name, $colors in $button-colors {
+	@each $name, $colors in $brand-colors {
 		$background-color: nth($colors, 1);
 		$text-color: nth($colors, 2);
 		$active-color: nth($colors, 3);
