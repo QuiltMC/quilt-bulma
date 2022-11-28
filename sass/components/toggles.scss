@@ -14,17 +14,15 @@ $theme-switcher-enabled: false !default;
 			display: none;
 		}
 	}
-	&:checked ~ {
-		* {
-			filter: brightness(70%) contrast(90%) saturate(90%);
+	&:checked ~ * {
+		filter: brightness(70%) contrast(90%) saturate(90%);
 
-			#theme-low-contrast {
-				display: block;
-			}
+		#theme-low-contrast {
+			display: block;
+		}
 
-			#theme-normal-contrast {
-				display: none;
-			}
+		#theme-normal-contrast {
+			display: none;
 		}
 	}
 }
@@ -34,8 +32,7 @@ $theme-switcher-enabled: false !default;
 	nav .navbar-menu {
 		display: block;
 	}
-
-	div .sidebar {
-		display: block !important;
-	}
+}
+#toggle-sidebar:checked ~ div .sidebar {
+	display: block !important;
 }
