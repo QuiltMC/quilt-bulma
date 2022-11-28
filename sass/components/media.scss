@@ -6,10 +6,8 @@
 	}
 }
 
-div.blog-post {
-	> .media {
-		margin-bottom: 1rem;
-	}
+div.blog-post > .media {
+	margin-bottom: 1rem;
 }
 
 .media {
@@ -17,7 +15,7 @@ div.blog-post {
 		overflow-y: hidden;
 	}
 
-	.media .subtitle {
+	.subtitle {
 		margin-bottom: 0 !important;
 	}
 }
