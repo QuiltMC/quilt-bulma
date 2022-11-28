@@ -1,3 +1,7 @@
+.button.is-disabled {
+	color: $button-disabled-color;
+}
+
 hr {
 	background-color: $grey-dark;
 	border-color: $grey-dark;
@@ -17,10 +21,10 @@ span.inline-divider {
 }
 
 .modal-close {
-  &::before,
-  &::after {
-	background-color: white;
-  }
+	&::before,
+	&::after {
+		background-color: white;
+	}
 }
 
 // Enable low contrast button
@@ -42,12 +46,4 @@ label[for="low-contrast"] {
 
 #theme-switcher {
 	display: flex;
-}
-
-.has-text-starchild-themed {
-  color: $starchild-dark;
-}
-
-.has-background-starchild-themed {
-  background-color: $starchild-dark;
 }
