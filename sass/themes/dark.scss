@@ -57,53 +57,20 @@ $message-body-border-width: 0.1rem;
 $message-header-background-color: lighten($dark, 15%);
 $message-header-color: $text;
 
-$message-colors: (
-	"light": (
-		$dark-light,
-		$light-invert,
-		darken($light, 20%),
-	),
-	"dark": (
-		lighten($dark, 15%),
-		$dark-invert,
-		$dark,
-	),
-	"primary": (
-		$primary,
-		$primary-invert,
-		darken($primary-dark, 30%),
-		$primary-dark,
-	),
-	"link": (
-		$link,
-		$link-invert,
-		darken($link-dark, 20%),
-		$link-dark,
-	),
-	"info": (
-		$info,
-		$info-invert,
-		darken($info-dark, 30%),
-		$info-dark,
-	),
-	"success": (
-		$success,
-		$success-invert,
-		darken($success-dark, 20%),
-		$success-dark,
-	),
-	"warning": (
-		$warning,
-		$warning-invert,
-		darken($warning-dark, 20%),
-		$warning-dark,
-	),
-	"danger": (
-		$danger,
-		$danger-invert,
-		darken($danger-dark, 30%),
-		$danger-dark,
-	),
+$message-colors: map-merge(
+	$colors,
+	(
+		light: (
+			$dark-light,
+			$light-invert,
+			darken($light, 20%),
+		),
+		dark: (
+			lighten($dark, 15%),
+			$dark-invert,
+			$dark,
+		),
+	)
 );
 
 $content-blockquote-background-color: $dark;
@@ -129,7 +96,6 @@ $navbar-item-active-background-color: $primary;
 $navbar-item-active-color: $text;
 $navbar-item-hover-background-color: $primary;
 $navbar-item-hover-color: $text;
-
 $navbar-box-shadow-color: rgba(0, 0, 0, 0);
 $navbar-box-shadow-size: 0px;
 
