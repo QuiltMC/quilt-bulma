@@ -3,7 +3,7 @@
 	"version": "0.0.15",
 	"description": "Bulma, customized for use on Quilt's websites",
 	"scripts": {
-		"build": "node build.js",
+		"build": "node build.mjs",
 		"pack": "npm-pack-zip"
 	},
 	"devDependencies": {
@@ -12,12 +12,12 @@
 		"bulma": "^0.9.4",
 		"bulma-timeline": "^3.0.5",
 		"clean-css": "^5.3.1",
+		"glob": "^8.0.3",
 		"npm-pack-zip": "^1.3.0",
 		"sass": "^1.54.9"
 	},
 	"repository": "https://github.com/QuiltMC/quilt-bulma",
 	"files": [
-		"css",
 		"dist",
 		"sass"
 	],

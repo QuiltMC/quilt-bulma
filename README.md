@@ -32,21 +32,19 @@ pseudo-CDN.
 
 # Package Structure
 
-* `css/`: Plain CSS which is needed to tie the light and dark themes together
-* `sass/`: SCSS files representing our Bulma customisations
-* When built, `/dist`: Contains built CSS files, as well as their minified versions`
+- `sass/`: SCSS files representing our Bulma customisations
+- When built, `/dist`: Contains built CSS files, as well as their minified versions`
 
 # Project Credit
 
 This project combines and modifies the following projects:
 
-* [Bulma](https://bulma.io), the CSS framework
+- [Bulma](https://bulma.io), the CSS framework
 
+- The following [CreativeBulma](https://github.com/CreativeBulma/) components:
 
-* The following [CreativeBulma](https://github.com/CreativeBulma/) components:
-  * [bulma-divider](https://github.com/CreativeBulma/bulma-divider/), a Bulma extension for dividers with text
-  * [bulma-tooltip](https://github.com/CreativeBulma/bulma-tooltip/), a Bulma extension for adding tooltips to anything
+  - [bulma-divider](https://github.com/CreativeBulma/bulma-divider/), a Bulma extension for dividers with text
+  - [bulma-tooltip](https://github.com/CreativeBulma/bulma-tooltip/), a Bulma extension for adding tooltips to anything
 
-
-* The following [wikiki](https://wikiki.github.io/) components:
-  * [bulma-timeline](https://wikiki.github.io/components/timeline/), a Bulma extension for vertical timeline layouts
+- The following [wikiki](https://wikiki.github.io/) components:
+  - [bulma-timeline](https://wikiki.github.io/components/timeline/), a Bulma extension for vertical timeline layouts
