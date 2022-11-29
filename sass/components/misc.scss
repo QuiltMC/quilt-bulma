@@ -169,8 +169,6 @@ body {
 }
 
 .navbar .navbar-brand .navbar-logo {
-	@include ltr-property("padding", 3rem);
-
 	img {
 		@include ltr {
 			margin-right: 0.5em;
