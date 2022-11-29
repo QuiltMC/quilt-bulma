@@ -160,13 +160,6 @@ $modal-background-background-color: rgba(0, 0, 0, 0.86);
 $hr-color: $grey-dark;
 $notification-link-color: $white;
 $inline-divider-color: $grey-dark;
+$notification-background-color: lighten($dark, 10%);
 
 $low-contrast-switch-enabled: true;
-
-// Miscellaneous rules
-.button.is-disabled {
-	color: $button-disabled-color;
-}
-.notification {
-	background-color: lighten($dark, 10%);
-}
