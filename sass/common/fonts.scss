@@ -69,6 +69,14 @@ $unicode-ranges: (
 
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
 
-$header-font: join("Poppins", $family-sans-serif);
-$family-sans-serif: join("Atkinson Hyperlegible", $family-sans-serif);
-$family-monospace: join("IBM Plex Mono", $family-monospace);
+$header-font: join("Poppins", $family-sans-serif, $separator: "comma");
+$family-sans-serif: join(
+	"Atkinson Hyperlegible",
+	$family-sans-serif,
+	$separator: "comma"
+);
+$family-monospace: join(
+	"IBM Plex Mono",
+	$family-monospace,
+	$separator: "comma"
+);
