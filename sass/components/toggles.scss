@@ -34,8 +34,10 @@ $low-contrast-switch-enabled: false !default;
 
 #toggle-navbar:checked ~ {
 	section,
-	nav .navbar-menu {
-		display: block;
+	nav {
+		.navbar-menu {
+			display: block;
+		}
 	}
 }
 #toggle-sidebar:checked ~ div .sidebar {
