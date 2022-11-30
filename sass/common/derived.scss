@@ -31,13 +31,9 @@ $neutral-background: $white !default;
 $pagination-current-background-color: $primary !default;
 $pagination-current-border-color: $primary !default;
 
-$default-border-color: lighten($text, 20%);
-$default-border: 1px solid $default-border-color;
-$pre-border: 1px solid darken($dark, 20%);
+$default-border-color: lighten($text, 20%) !default;
+$default-border: 1px solid $default-border-color !default;
+$pre-border: 1px solid darken($dark, 20%) !default;
 $navbar-transparent-background: rgba(255, 255, 255, 0.3) !default;
 
-$transparent-text: transparentize($text, 0.7);
-
-.content .tabs ul {
-	margin-left: 0;
-}
+$transparent-text: transparentize($text, 0.7) !default;

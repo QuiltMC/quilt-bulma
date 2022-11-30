@@ -153,6 +153,10 @@ span.inline-divider {
 	overflow-x: auto;
 }
 
+.content .tabs ul {
+	margin-left: 0;
+}
+
 // Make footer expand if page is too small
 .page {
 	display: flex;

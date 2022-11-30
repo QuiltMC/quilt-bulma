@@ -22,9 +22,6 @@ $text: $white-bis !default;
 $text-light: $white-ter;
 $text-strong: $white;
 
-@import "../../node_modules/bulma/sass/utilities/derived-variables";
-@import "../common/derived";
-
 $admin-background: $admin-dark;
 $community-background: $community-dark;
 $developer-background: $developer-dark;
@@ -32,6 +29,14 @@ $keyholder-background: $keyholder-dark;
 $moderator-background: $moderator-dark;
 $trainee-background: $trainee-dark;
 $neutral-background: #271f33;
+
+$default-border-color: darken($text, 30%);
+$default-border: 1px solid $default-border-color;
+$pre-border: 1px solid lighten($dark, 20%);
+$navbar-transparent-background: rgba(0, 0, 0, 0.3);
+
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+@import "../common/derived";
 
 $body-background-color: $neutral-background;
 $footer-background-color: #1c1526;
@@ -139,11 +144,6 @@ $timeline-marker-border: 2px solid $white;
 
 $card-background-color: $dark-lightish;
 $card-shadow: 0;
-
-$default-border-color: darken($text, 30%);
-$default-border: 1px solid $default-border-color;
-$pre-border: 1px solid lighten($dark, 20%);
-$navbar-transparent-background: rgba(0, 0, 0, 0.3);
 
 $input-disabled-color: $grey;
 $input-disabled-border-color: $grey;
