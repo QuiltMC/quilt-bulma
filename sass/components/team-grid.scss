@@ -50,6 +50,10 @@
 
 			justify-content: center;
 
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+
 			div {
 				height: 2rem;
 				width: 2rem;
