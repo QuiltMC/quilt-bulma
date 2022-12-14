@@ -41,26 +41,24 @@
 		object-fit: cover;
 	}
 
+	.description {
+		margin-top: 1rem;
+	}
+
 	.card-content {
 		padding-top: 4rem;
 
 		.system-members {
-			display: flex;
-			flex-flow: row wrap;
+			margin-top: 1rem;
 
-			justify-content: center;
+			> div {
+				display: flex;
+				flex-flow: row wrap;
 
-			&:not(:last-child) {
-				margin-bottom: 1rem;
-			}
+				justify-content: center;
+				align-items: center;
 
-			div {
-				height: 2rem;
-				width: 2rem;
-
-				&:not(:last-child) {
-					margin-right: 0.2rem;
-				}
+				margin-top: 0.75rem;
 
 				img {
 					height: 2rem;
@@ -70,13 +68,36 @@
 					border: 1px solid $text;
 				}
 			}
+
+			&[open] .system-member-title .media-content::before {
+				transform: rotate(90deg);
+			}
 		}
 
 		.media {
-			&.system-member-title {
-				margin-bottom: 0.2rem;
-			}
+			margin-bottom: 0 !important;
 
+			&.system-member-title {
+				.media-content {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					&::before {
+						content: " ";
+						display: inline-block;
+
+						width: 0;
+						height: 0;
+						border-top: 5px solid transparent;
+						border-bottom: 5px solid transparent;
+						border-left: 5px solid transparentize($text, 0.2);
+
+						margin-right: 0.7rem;
+						transition: transform 0.2s ease-out;
+					}
+				}
+			}
 			.subtitle {
 				color: transparentize($text, 0.2);
 
