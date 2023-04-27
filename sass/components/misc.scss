@@ -287,3 +287,8 @@ span.inline-divider {
 		background-color: $modal-close-button-color;
 	}
 }
+
+// Prevent main content from overflowing.
+main {
+	overflow-wrap: break-word;
+}
