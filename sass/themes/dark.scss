@@ -157,6 +157,10 @@ $modal-close-dimensions: 80px;
 $modal-close-button-color: $black;
 $modal-background-background-color: rgba(0, 0, 0, 0.86);
 
+$dropdown-content-background-color: darken($primary, 30%);
+$dropdown-item-hover-background-color: $primary;
+$dropdown-item-active-background-color: $primary;
+
 $hr-color: $grey-dark;
 $notification-link-color: $white;
 $inline-divider-color: $grey-dark;
